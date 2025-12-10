@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+
+  filehash:
+    image: docker.id/serbriss/filehash:latest
+    pull_policy: never
+    container_name: filehash
+    volumes:
+      - ../data/storage:/data/storage
